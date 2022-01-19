@@ -65,9 +65,9 @@ const sallie = new Person('Sallie', 26);
 const mark = new Person('Mark', 23);
 const cori = new Person('Cori', 25);
 
-console.log(sallie.toString());
-console.log(mark.toString());
-console.log(cori.toString());
+// console.log(sallie.toString());
+// console.log(mark.toString());
+// console.log(cori.toString());
 
 mark.eat('Pizza');
 mark.eat('Pasta');
@@ -77,9 +77,9 @@ mark.eat('Sammich');
 mark.eat('cake');
 mark.eat('ramen');
 
-console.log(mark.stomach);
-mark.poop();
-console.log(mark.stomach);
+// console.log(mark.stomach);
+// mark.poop();
+// console.log(mark.stomach);
 
 /*
   TASK 2
@@ -95,8 +95,11 @@ console.log(mark.stomach);
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-function Car() {
-  
+function Car(model, milesPerGallon) {
+  this.model = model;
+  this.milesPerGallon = milesPerGallon;
+  this.tank = 0;
+  this.odometer = 0;
 }
 
 
